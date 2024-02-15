@@ -1,0 +1,432 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Be Vietnam Pro, sans-serif;
+    background-image: linear-gradient(to right, rgb(69, 69, 249), #EF6574);
+}
+
+#brand {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(69, 69, 249);
+}
+
+header {
+    background-color: #fff;
+    margin: 0 auto;
+    height: auto;
+    padding: 0.9rem;
+    width: 85%;
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    box-shadow: 2px 2px 8px rgba(145, 145, 145, 0.607);
+    align-items: center;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.detailedMenu {
+    height: 30.5rem;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    top: 1.4rem;
+    z-index: -1;
+}
+.close {
+    display: none;
+
+}
+
+.open {
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 24rem;
+    align-items: center;
+    margin: 0 auto;
+    padding:0 1rem;
+    justify-content: center;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.nav-link {
+    text-decoration:none;
+    text-shadow: 1px 1px 4px rgb(69, 69, 249);
+    text-align: center;
+    color: black;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.contactButton {
+    padding: 1rem;
+    background-color: black;
+    border-radius: 1.2rem;
+    color: white;
+}
+
+.contactBox {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.box1,
+.box2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px;
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 6px rgb(56, 55, 55);
+}
+
+.box1 a,
+.box2 a {
+    font-size: 1rem;
+    color: blue;
+    padding-top: 0;
+    margin-top: 2rem;
+}
+
+.box1 img,
+.box2 img {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.box1 {
+    border-radius: 0 0 0 2rem;
+}
+
+.box2 {
+    border-radius: 0 0 2rem 0;
+}
+
+.slogen {
+    position: relative;
+    margin: 12rem auto;
+    width: 75%;
+    /*height: 5rem;*/
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    opacity: 1;
+    animation-name: slogen;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slogen {
+0% {color: #fff} 
+25% {color:yellow}
+50% {color:white}
+75% {color: white}
+100% {color: #fff}
+}
+.arrow {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    color: black;
+    margin: 25rem auto 0;
+
+}
+
+#process, #work
+ {
+    background-color: #fff;
+    margin: 1rem auto;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    border-radius: 3rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 3rem auto;
+    justify-content: center;
+    align-items: center;
+    color: #c73445c0;
+    text-align: center;
+}
+
+
+.content {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    height: auto;
+    transform: translateX(-50%);
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-size: larger;
+    padding: 0 1rem;
+
+}
+
+.fa-solid {
+    font-size: 2rem;
+}
+
+.logo {
+    height: 37px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #fff;
+    width: 90%;
+    height: 20rem;
+    border-radius: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-bottom: 1.5rem;
+    border: 2px solid rgb(195, 195, 195);
+    box-shadow: 2px 2px 8px rgba(70, 50, 50, 0.746);
+
+}
+
+
+.card-text {
+    font-weight: bold;
+    color: #870f1d;
+    padding-top: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    width: 80%;
+    text-align: center;
+}
+
+p {
+    margin: 2rem 1rem 20px;
+}
+
+.pics {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #c7344547;
+    justify-content: space-evenly;
+}
+
+.pics img {
+    margin: 0 0.5rem;
+    width: 30%;
+}
+
+.card-image {
+    padding-top: 0;
+    margin-top: 0;
+    background-color: #c7344547;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 9.8rem;
+    margin: auto auto 25px;
+    padding-bottom: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+} 
+
+.bubble {
+    width: 80%;
+    position: relative;
+    height: 4rem;
+    border-radius: 30px;
+    margin: auto;
+    background-color: #EF6574;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem auto;   
+}
+
+
+.bigCard {
+    background-color: #fff;
+    width: 100%;
+    height: 74rem;
+    border-radius: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    border: 2px solid rgb(195, 195, 195);
+    box-shadow: 2px 2px 8px 
+}
+
+.inside-card {
+    width: 80%;
+    background-color:  rgba(69, 69, 249, 0.502);
+    border: 2px solid rgb(195, 195, 195);
+    box-shadow: 2px 2px 8px;
+    margin: 1rem auto;
+    border-radius: 3rem;
+}
+
+#about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    height: auto;
+    padding-bottom: 1rem;
+
+}
+
+/* #scrollback {
+    font-size: larger;
+} */
+
+@media screen and (min-width:768px) {
+    #menuButton {
+        display: none
+    }
+
+    .detailedMenu {
+        display: flex;
+
+        flex-direction: column;
+        height: 2rem;
+        position: relative;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+
+    header {
+        display: flex;
+        width: 95%;
+        height:10%
+    }
+
+    #process {
+        height: 100vh;
+        text-align: center;
+        font-size: larger;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #process p {
+        margin: 0 8rem;
+    }
+
+    .slogen {
+        margin-top: 18rem;
+        margin-bottom: -14.5rem;
+        padding-bottom: -20rem;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .contactBox {
+        display: none;
+    }
+
+    .contactButton {
+        padding: 0;
+
+    }
+ 
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0 auto;
+        left: 18rem;
+        margin-bottom:2rem;
+    }
+
+    .card {
+        width: 30%;
+        height: auto;
+    } 
+
+    .card-text{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #brand img{
+        height: 5.5rem;
+        width: auto;
+
+    }
+}
