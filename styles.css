@@ -3,7 +3,8 @@
 }
 
 body {
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
     box-sizing: border-box;
     font-family: Be Vietnam Pro, sans-serif;
     background-image: linear-gradient(to right, rgb(69, 69, 249), #EF6574);
@@ -17,10 +18,10 @@ body {
 
 header {
     background-color: #fff;
-    margin: 0 auto;
+    margin: 0;
     height: auto;
-    padding: 0.9rem;
-    width: 85%;
+    padding: 7px 0;
+    width: 90%;
     position: fixed;
     top: 1rem;
     left: 50%;
@@ -35,6 +36,7 @@ header {
 
 .mobile-nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
@@ -45,14 +47,15 @@ header {
     height: 30.5rem;
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 1rem;
     left: 50%;
     transform: translateX(-50%);
     position: relative;
     top: 1.4rem;
     z-index: -1;
+    width: 100%;
 }
 .close {
     display: none;
@@ -70,12 +73,12 @@ nav {
     height: 24rem;
     align-items: center;
     margin: 0 auto;
-    padding:0 1rem;
+    padding:0;
     justify-content: center;
     background-color: white;
     left: 50%;
     transform: translateX(-50%);
-    
+    width: 100%
 }
 
 .nav-link {
@@ -98,14 +101,16 @@ nav {
 }
 
 .contactBox {
-    width: 100%;
-    position: absolute;
+    background-color: green;
+    position: relative;
     display: flex;
-    margin: 0 auto;
+    height: 10rem;
+    margin: 0;
     padding: 0;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 0 0 2rem 2rem;
+    
 }
 
 .box1,
@@ -135,6 +140,7 @@ nav {
 .box2 img {
     margin: 1rem auto;
     text-align: center;
+    width: 30%;
 }
 
 .box1 {
@@ -180,22 +186,21 @@ nav {
 
 }
 
-#process, #work
+#process, #work, #about-us
  {
     background-color: #fff;
-    margin: 1rem auto;
+    margin: 0 auto;
     width: 100%;
     height: auto;
     position: relative;
-    top: 0;
     border-radius: 3rem;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    padding: 3rem auto;
     justify-content: center;
     align-items: center;
     color: #c73445c0;
     text-align: center;
+    font-size: larger;
 }
 
 
@@ -209,8 +214,6 @@ nav {
     position: relative;
     text-align: center;
     align-items: center;
-    font-size: larger;
-    padding: 0 1rem;
 
 }
 
@@ -227,21 +230,21 @@ nav {
     background-color: #fff;
     width: 90%;
     height: 20rem;
+    padding: 1rem 0;
     border-radius: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%;
+    transform: translateX(-50%); */
     position: relative;
     margin-bottom: 1.5rem;
     border: 2px solid rgb(195, 195, 195);
     box-shadow: 2px 2px 8px rgba(70, 50, 50, 0.746);
-
+    font-size: smaller;
 }
 
 
 .card-text {
     font-weight: bold;
     color: #870f1d;
-    padding-top: 2rem auto 0;
     display: flex;
     flex-direction: column;
     left: 50%;
@@ -252,11 +255,12 @@ nav {
 }
 
 p {
-    margin: 2rem 1rem 20px;
+    margin: 1rem 1rem 20px;
 }
 
 .pics {
     position: relative;
+    padding: 3rem 0 1rem;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -270,7 +274,7 @@ p {
 }
 
 .card-image {
-    padding-top: 0;
+    padding: 0;
     margin-top: 0;
     background-color: #c7344547;
 }
@@ -301,7 +305,8 @@ p {
 
 h2 {
     text-align: center;
-    margin: 1rem auto;   
+    margin: 1rem auto;  
+    padding: 0.5rem 0; 
 }
 
 
@@ -321,15 +326,16 @@ h2 {
 
 .inside-card {
     width: 80%;
-    background-color:  rgba(69, 69, 249, 0.502);
+    background-color:  rgba(21, 14, 14, 0.761);
     border: 2px solid rgb(195, 195, 195);
     box-shadow: 2px 2px 8px;
     margin: 1rem auto;
     border-radius: 3rem;
+    color: #f198a578;
 }
-
+/* 
 #about-us {
-    width: 100%;
+    width: 00%;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -337,15 +343,24 @@ h2 {
     height: auto;
     padding-bottom: 1rem;
 
-}
+} */
 
 /* #scrollback {
     font-size: larger;
 } */
 
 @media screen and (min-width:768px) {
+
+    body {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Be Vietnam Pro, sans-serif;
+        background-image: linear-gradient(to right, rgb(69, 69, 249), #EF6574);
+    }
+
     #menuButton {
-        display: none
+        display: none;
+
     }
 
     .detailedMenu {
@@ -375,21 +390,21 @@ h2 {
     #process p {
         margin: 0 8rem;
     }
-
+/* 
     .slogen {
         margin-top: 18rem;
-        margin-bottom: -14.5rem;
-        padding-bottom: -20rem;
-    }
+        margin-bottom: -14rem;
+        padding-bottom: -19rem;
+    } */
 
     .content {
-        width: 100%;
+        width: 90%;
         display: flex;
         position: relative;
-        flex-direction: row;
+        flex-direction: row; */
         /* align-items: center;
         justify-content: center; */
-    }
+    
 
     .contactBox {
         display: none;
