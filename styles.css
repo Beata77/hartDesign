@@ -294,6 +294,7 @@ p {
 .bubble {
     width: 80%;
     position: relative;
+    /* top: 5px; */
     height: 4rem;
     border-radius: 30px;
     margin: auto;
@@ -301,9 +302,11 @@ p {
     text-align: center;
     margin: auto;
     justify-content: center;
+    text-align: center;
 }
 
 h2 {
+
     text-align: center;
     margin: 1rem auto;  
     padding: 0.5rem 0; 
@@ -333,9 +336,12 @@ h2 {
     border-radius: 3rem;
     color: #c7344511;
 }
+
+h4 {
+}
 /* 
 #about-us {
-    width: 00%;
+    width: 00%; 
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
