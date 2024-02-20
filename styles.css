@@ -168,7 +168,7 @@ nav {
 
 @keyframes slogen {
 0% {color: #fff} 
-25% {color:yellow}
+25% {color: rgb(53, 12, 54)}
 50% {color:white}
 75% {color: white}
 100% {color: #fff}
@@ -356,35 +356,45 @@ h4 {
 } */
 
 @media screen and (min-width:768px) {
-
-    body {
-        margin: 0;
-        box-sizing: border-box;
-        font-family: Be Vietnam Pro, sans-serif;
-        background-image: linear-gradient(to right, rgb(69, 69, 249), #EF6574);
-    }
+    
+    
+        header {
+            display: flex;
+            flex-direction: row;
+            width: 95%;
+            height:10%;
+            align-items: center;
+            justify-content: center;
+        }
 
     #menuButton {
         display: none;
-
     }
-
     .detailedMenu {
-        display: flex;
-
-        flex-direction: column;
+        flex-direction: row;
         height: 2rem;
-        position: relative;
-        justify-content: center;
         margin: 2rem auto;
-    }
-
-    header {
         display: flex;
-        width: 95%;
-        height:10%
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        /* left: 50%;
+        transform: translateX(-50%); */
+        position: relative;
+        top: 1.7rem;
+        z-index: -3;
+        width: 100%;
     }
 
+    .mobile-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    
+    }
     #process {
         height: 100vh;
         text-align: center;
@@ -416,6 +426,12 @@ h4 {
         display: none;
     }
 
+    .box1, .box2 {
+        position: relative;
+        padding-top: 10px;
+        }
+
+
     .contactButton {
         padding: 0;
 
@@ -425,10 +441,9 @@ h4 {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        text-align: center;
         margin: 0 auto;
-        left: 18rem;
+        position: relative;
+        left: 5rem;
         margin-bottom:2rem;
     }
 
@@ -450,4 +465,4 @@ h4 {
         width: auto;
 
     }
-}
+}}
