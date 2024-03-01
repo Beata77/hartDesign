@@ -360,30 +360,16 @@ h4 {
     
         header {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            position: fixed;
             width: 95%;
-            height:10%;
+            height: 7rem;
             align-items: center;
             justify-content: center;
         }
 
     #menuButton {
         display: none;
-    }
-    .detailedMenu {
-        flex-direction: row;
-        height: 2rem;
-        margin: 2rem auto;
-        display: flex;
-        width: 80%;
-        margin: 0 auto;
-        padding: 0 1rem;
-        /* left: 50%;
-        transform: translateX(-50%); */
-        position: relative;
-        top: 1.7rem;
-        z-index: -3;
-        width: 100%;
     }
 
     .mobile-nav {
@@ -392,9 +378,24 @@ h4 {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        margin-left: -5rem;
+        padding-top: 10px;
+        height: 3rem;
         position: relative;
-    
     }
+    
+    .detailedMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        height: 1.4rem;
+        align-items: center;
+        position: relative;
+        z-index: -3;
+        width: 95%;
+    } 
+   
     #process {
         height: 100vh;
         text-align: center;
@@ -407,11 +408,7 @@ h4 {
         margin: 0 8rem;
     }
 /* 
-    .slogen {
-        margin-top: 18rem;
-        margin-bottom: -14rem;
-        padding-bottom: -19rem;
-    } */
+
 
     .content {
         width: 90%;
@@ -427,9 +424,8 @@ h4 {
     }
 
     .box1, .box2 {
-        position: relative;
-        padding-top: 10px;
-        }
+        display: none;
+           }
 
 
     .contactButton {
@@ -443,8 +439,11 @@ h4 {
         flex-direction: row;
         margin: 0 auto;
         position: relative;
-        left: 5rem;
-        margin-bottom:2rem;
+        padding: 0;
+        height: 3rem;
+        justify-content: space-evenly;
+        /* left: 5rem;
+        margin-bottom:2rem; */
     }
 
     .card {
