@@ -395,7 +395,14 @@ h4 {
         z-index: -3;
         width: 95%;
     } 
+
+    .slogen {
+        margin-bottom: 2rem;
+    }
    
+    .arrow {
+        margin: 13rem auto 0;
+    }
     #process {
         height: 100vh;
         text-align: center;
@@ -464,4 +471,4 @@ h4 {
         width: auto;
 
     }
-}}
+}
