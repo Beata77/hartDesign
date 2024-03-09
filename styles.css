@@ -337,8 +337,6 @@ h2 {
     color: #c7344511;
 }
 
-h4 {
-}
 /* 
 #about-us {
     width: 00%; 
@@ -460,6 +458,7 @@ h4 {
     } 
 
     .card-text{
+        position: relative;
         text-align: center;
         justify-content: center;
         width: 100%;
@@ -468,7 +467,9 @@ h4 {
     }
 
     .card-text p {
+        width: 90%;
         text-align: center;
+        margin: 20px;
     }
     #brand img{
         height: 5.5rem;
