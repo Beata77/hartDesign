@@ -401,7 +401,7 @@ h2 {
     .arrow {
         margin: 13rem auto 0;
     }
-    #process {
+    #process #work{
         height: auto;
         text-align: center;
         font-size: larger;
@@ -410,11 +410,11 @@ h2 {
         position: relative;
     }
 
-    #process p {
-        margin: 0 8rem;
+    p {
+       font-size:x-large;
+       width: 90%;
+       margin: 1rem, auto;
     }
-
-
 
     .content {
         display: flex;
@@ -447,8 +447,6 @@ h2 {
         padding: 0;
         height: 3rem;
         justify-content: space-evenly;
-        /* left: 5rem;
-        margin-bottom:2rem; */
     }
 
     .card {
@@ -457,6 +455,7 @@ h2 {
         width: 20%;
         height: 20rem;
         position: relative;
+        margin-bottom: 4rem;
     } 
 
     .card-text {
@@ -471,6 +470,7 @@ h2 {
 
     .card-text p {
         width: 90%;
+        font-size: medium;
     }  
 
     .card-image {
