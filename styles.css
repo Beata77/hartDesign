@@ -458,6 +458,12 @@ h2 {
         margin-bottom: 4rem;
     } 
 
+    #jungle {
+        width: 80%;
+        margin: 2rem auto;
+        height: 10rem;
+    }
+
     .card-text {
         position: relative;
         display: flex;
