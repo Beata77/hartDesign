@@ -251,7 +251,7 @@ nav {
     transform: translateX(-50%);
     position: relative;
     width: 80%;
-    text-align: center;
+    align-items: center;
 }
 
 p {
@@ -277,6 +277,12 @@ p {
     padding: 0;
     margin-top: 0;
     background-color: #c7344547;
+}
+
+.jungle {
+    width: 80%;
+    margin: 2rem auto;
+    height: auto;
 }
 
 .icons {
@@ -337,21 +343,14 @@ h2 {
     color: #c7344511;
 }
 
-/* 
-#about-us {
-    width: 00%; 
+
+.ideas {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
-    height: auto;
-    padding-bottom: 1rem;
-
-} */
-
-/* #scrollback {
-    font-size: larger;
-} */
+    width: 50%;
+    margin: 2rem auto;
+    height: 15rem;
+}
 
 @media screen and (min-width:768px) {
     
@@ -401,7 +400,7 @@ h2 {
     .arrow {
         margin: 13rem auto 0;
     }
-    #process #work{
+    #process, #work, #about-us {
         height: auto;
         text-align: center;
         font-size: larger;
@@ -453,23 +452,39 @@ h2 {
         display: flex;
         flex-direction: column;
         width: 20%;
-        height: 20rem;
+        height:20rem;
         position: relative;
         margin-bottom: 4rem;
+        
     } 
 
-    #jungle {
+    .jungle {
         width: 80%;
         margin: 2rem auto;
         height: 10rem;
+    }
+
+    .ideas {
+        width: 35%;
+        margin: 2rem auto;
+        height: 18rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .icons2 {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin: 0 auto;
     }
 
     .card-text {
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
+        width: 70%;
         margin: 0;
         padding: 0;
     }
@@ -488,4 +503,8 @@ h2 {
         width: auto;
 
     }
+
+    .bigCard {
+        height: auto;
+}
 }
