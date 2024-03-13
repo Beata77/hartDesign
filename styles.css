@@ -241,7 +241,6 @@ nav {
     font-size: smaller;
 }
 
-
 .card-text {
     font-weight: bold;
     color: #870f1d;
@@ -282,7 +281,7 @@ p {
 .jungle {
     width: 80%;
     margin: 2rem auto;
-    height: auto;
+    height: 12rem;
 }
 
 .icons {
@@ -461,7 +460,7 @@ h2 {
     .jungle {
         width: 80%;
         margin: 2rem auto;
-        height: 10rem;
+        height: auto;
     }
 
     .ideas {
