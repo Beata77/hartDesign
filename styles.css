@@ -101,7 +101,6 @@ nav {
 }
 
 .contactBox {
-    background-color: green;
     position: relative;
     display: flex;
     height: 10rem;
@@ -232,11 +231,9 @@ nav {
     height: 20rem;
     padding: 1rem 0;
     border-radius: 3rem;
-    /* left: 50%;
-    transform: translateX(-50%); */
     position: relative;
     margin-bottom: 1.5rem;
-    border: 2px solid rgb(195, 195, 195);
+    border: 2px solid rgb(133, 133, 133);
     box-shadow: 2px 2px 8px rgba(70, 50, 50, 0.746);
     font-size: smaller;
 }
@@ -415,6 +412,7 @@ h2 {
     }
 
     .content {
+        width: 90%;
         display: flex;
         position: relative;
         flex-direction: row; 
@@ -454,14 +452,17 @@ h2 {
         height:20rem;
         position: relative;
         margin-bottom: 4rem;
+        background-color:  rgba(236, 228, 228, 0.761);
+
         
     } 
 
     .jungle {
-        width: 80%;
+        width: 30%;
         margin: 2rem auto;
-        height: auto;
+        height: 23rem;
     }
+
 
     .ideas {
         width: 35%;
@@ -483,6 +484,7 @@ h2 {
         flex-direction: column;
         width: 70%;
         margin: 0;
+
     }
 
     .card-text p {
@@ -506,6 +508,13 @@ h2 {
     .bigCard {
         height: auto;
     }
+
+    .inside-card {
+    
+        width: 18rem;
+        margin: auto 3rem;
+    }
+
     .scroll {
         height: 4rem;
         padding-bottom: 10px;
